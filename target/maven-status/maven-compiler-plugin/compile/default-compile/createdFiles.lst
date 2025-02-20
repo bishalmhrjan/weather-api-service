@@ -1,0 +1,6 @@
+com\weatherforcaste\api\DailyWeatherApiController.class
+com\weatherforcaste\api\DailyWeatherService.class
+Main.class
+com\weatherforcaste\api\DailyWeatherDTO.class
+com\weatherforcaste\api\DailyWeatherRepository.class
+com\weatherforcaste\api\DailyWeatherListDTO.class
