@@ -12,7 +12,7 @@ import java.util.Date;
 
 @Data
 @JsonPropertyOrder({"location", "temperature", "humidity", "precipitation", "wind_speed", "status", "last_updated"})
-public class RealTimeDTO {
+public class RealTimeWeatherDTO {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String location;
