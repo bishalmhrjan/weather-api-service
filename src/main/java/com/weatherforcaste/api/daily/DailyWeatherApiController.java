@@ -1,5 +1,6 @@
 package com.weatherforcaste.api.daily;
 
+import com.weatherapi.forecast.common.DailyWeather;
 import com.weatherapi.forecast.common.Location;
 import com.weatherforcaste.api.CommonUtility;
 import com.weatherforcaste.api.GeolocationException;
@@ -11,6 +12,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/v1/daily")
@@ -31,6 +34,7 @@ public class DailyWeatherApiController {
     public ResponseEntity<?> listDailyForecastByIpAddress(HttpServletRequest request) throws GeolocationException {
         String ipAddress = CommonUtility.getIPAddress(request);
         Location locationFromIp =geolocationService.getLocation(ipAddress);
+        List<DailyWeather> dailyForecast = dailyWeatherService.getByLocation(locationFromIp);
         return null;
     }
 
