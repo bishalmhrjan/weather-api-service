@@ -16,4 +16,8 @@ public class DailyWeatherListDTO {
     private String location;
 
     private List<DailyWeatherDTO> dailyForecast = new ArrayList<>();
+    public void addDailyWeatherDTO(DailyWeatherDTO dto) {
+        this.dailyForecast.add(dto);
+    }
+
 }
