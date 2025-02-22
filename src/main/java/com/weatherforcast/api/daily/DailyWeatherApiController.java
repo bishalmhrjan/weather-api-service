@@ -6,6 +6,7 @@ import com.weatherforcast.api.BadRequestException;
 import com.weatherforcast.api.CommonUtility;
 import com.weatherforcast.api.GeolocationException;
 import com.weatherforcast.api.GeolocationService;
+import com.weatherforcast.api.full.FullWeatherApiController;
 import com.weatherforcast.api.realtime.RealtimeWeatherApiController;
 import com.weatherforcast.api.hourly.HourlyWeatherApiController;
 import jakarta.servlet.http.HttpServletRequest;
