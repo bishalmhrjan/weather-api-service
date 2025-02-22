@@ -9,7 +9,9 @@ com\weatherforcast\api\daily\DailyWeatherRepository.class
 com\weatherforcast\api\security\ResourceServerConfig.class
 com\weatherforcast\api\location\LocationDTO.class
 com\weatherforcast\api\WeatherApiServiceApplication.class
+META-INF\spring-configuration-metadata.json
 com\weatherforcast\api\AbstractLocationService.class
+com\weatherforcast\api\security\AuthorizationServerConfig$1.class
 com\weatherforcast\api\CommonUtility.class
 com\weatherforcast\api\full\FullWeatherDTO.class
 Main.class
