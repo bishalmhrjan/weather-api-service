@@ -10,6 +10,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Transactional
@@ -28,7 +29,7 @@ public class LocationService extends AbstractLocationService {
     }
 
     @Deprecated
-    public Page<Location> listByPage(int pageNum, int pageSize, String sortField){
+    public Page<Location> listByPage(int pageNum, int pageSize, String sortField, Map<String, Object> filterFields){
         Sort sort= Sort.by(sortField).ascending();
         Pageable pageable = PageRequest.of(pageNum, pageSize,sort);
         return locationRepository.findUntrashed(pageable);
